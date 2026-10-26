@@ -1,4 +1,5 @@
 
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
@@ -88,5 +89,729 @@ html {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+}
+
+/* General page design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.7;
+    transition: 0.3s;
+}
+
+/* Navigation bar */
+nav {
+    background: #0f172a;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+nav button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* All sections */
+section {
+    padding: 75px 10%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    color: #0f172a;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0284c7;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Home section */
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h2 {
+    color: #0284c7;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 11px 20px;
+    margin: 10px 8px 10px 0;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* Project cards */
+.project-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.project-card a,
+#contact a {
+    color: #0284c7;
+    font-weight: bold;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark-mode #home h2 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card a,
+.dark-mode #contact a {
+    color: #7dd3fc;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+    nav {
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+
+    #home {
+        min-height: 65vh;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+}
+
+/* General page design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.7;
+    transition: 0.3s;
+}
+
+/* Navigation bar */
+nav {
+    background: #0f172a;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+nav button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* All sections */
+section {
+    padding: 75px 10%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    color: #0f172a;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0284c7;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Home section */
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h2 {
+    color: #0284c7;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 11px 20px;
+    margin: 10px 8px 10px 0;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* Project cards */
+.project-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.project-card a,
+#contact a {
+    color: #0284c7;
+    font-weight: bold;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark-mode #home h2 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card a,
+.dark-mode #contact a {
+    color: #7dd3fc;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+    nav {
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+
+    #home {
+        min-height: 65vh;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+}
+
+/* General page design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.7;
+    transition: 0.3s;
+}
+
+/* Navigation bar */
+nav {
+    background: #0f172a;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+nav button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* All sections */
+section {
+    padding: 75px 10%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    color: #0f172a;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0284c7;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Home section */
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h2 {
+    color: #0284c7;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 11px 20px;
+    margin: 10px 8px 10px 0;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* Project cards */
+.project-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.project-card a,
+#contact a {
+    color: #0284c7;
+    font-weight: bold;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark-mode #home h2 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card a,
+.dark-mode #contact a {
+    color: #7dd3fc;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+    nav {
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+
+    #home {
+        min-height: 65vh;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+}
+
+/* General page design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.7;
+    transition: 0.3s;
+}
+
+/* Navigation bar */
+nav {
+    background: #0f172a;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+nav button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* All sections */
+section {
+    padding: 75px 10%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    color: #0f172a;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0284c7;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Home section */
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h2 {
+    color: #0284c7;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 11px 20px;
+    margin: 10px 8px 10px 0;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* Project cards */
+.project-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.project-card a,
+#contact a {
+    color: #0284c7;
+    font-weight: bold;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark-mode #home h2 {
+    color: #7dd3fc;
+}
+
+.dark-mode .project-card a,
+.dark-mode #contact a {
+    color: #7dd3fc;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+    nav {
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+
+    #home {
+        min-height: 65vh;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
 }
 
